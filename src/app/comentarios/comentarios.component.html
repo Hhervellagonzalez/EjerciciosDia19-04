@@ -1,0 +1,9 @@
+<h1>Pagina de Comentarios</h1>
+<app-nuevo-comentario (enviarComentario)="agregarComentario($event)" ></app-nuevo-comentario>
+<ul>
+    @for (comentario of comentarios; track comentario) {
+        <li>
+            {{comentario}}
+        </li>
+    }
+</ul>
